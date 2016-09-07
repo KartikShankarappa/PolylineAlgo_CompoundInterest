@@ -2,18 +2,18 @@
 
 ### Instructions
 * This java application performs three tasks:
-    - Implement the [Polyline Algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) within the [PolylineEncoder](com/kartik/PolylineEncoder.java) class.
-    - Implement the compound interest methods of [CompoundInterestCalculator](com/kartik/CompoundInterestCalculator.java) class.
-    - Implement the command line [Program](com/kartik/Program.java) class to test the code.
+    - Implement the [Polyline Algorithm](https://developers.google.com/maps/documentation/utilities/polylinealgorithm) within the [PolylineEncoder](src/main/java/com/kartik/PolylineEncoder.java) class.
+    - Implement the compound interest methods of [CompoundInterestCalculator](src/main/java/com/kartik/CompoundInterestCalculator.java) class.
+    - Implement the command line [Program](src/main/java/com/kartik/Program.java) class to test the code.
 
 ### Program Instructions
-* The [Program](com/kartik/Program.java) takes command line arguments and parse them according to the following rules
+* The [Program](src/main/java/com/kartik/Program.java) takes command line arguments and parse them according to the following rules
     - The first argument should either be `gps` or `interest`
     - If the first argument is `gps` then the remaining arguments are GPS lat,lng pairs separated by spaces. 
-        - Parse these arguments and pass them into your [PolylineEncoder](com/kartik/PolylineEncoder.java) implementation and print the result
+        - Parse these arguments and pass them into your [PolylineEncoder](src/main/java/com/kartik/PolylineEncoder.java) implementation and print the result
     - If the first argument is `interest` then the second argument is either `annual` or `continuous`
-        - If the second argument is `annual` then the remaining arguments are parsed as `principal`, `rate`, `period` and `years`. Parse these values and pass them into your [CompoundInterestCalculator](com/kartik/CompoundInterestCalculator.java) `compoundAnnually` method implementation and print the result
-        - If the second argument is `continuous` then the remaining arguments are parsed as `principal`, `rate` and `years`. Parse these values and pass them into your [CompoundInterestCalculator](com/kartik/CompoundInterestCalculator.java) `continuousCompound` method implementation and print the result
+        - If the second argument is `annual` then the remaining arguments are parsed as `principal`, `rate`, `period` and `years`. Parse these values and pass them into your [CompoundInterestCalculator](src/main/java/com/kartik/CompoundInterestCalculator.java) `compoundAnnually` method implementation and print the result
+        - If the second argument is `continuous` then the remaining arguments are parsed as `principal`, `rate` and `years`. Parse these values and pass them into your [CompoundInterestCalculator](src/main/java/com/kartik/CompoundInterestCalculator.java) `continuousCompound` method implementation and print the result
 * If any of the arguments are invalid then print `Invalid argument` to the command line and quit
     
 ### Example Runs of Program
